@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Global Spotlight Effect -->
+    <div id="globalSpotlight" class="global-spotlight"></div>
+
+    <!-- Hero Section with Profile Card -->
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <div class="pc-card-wrapper">
+                <div class="pc-behind"></div>
+                <div class="pc-card-shell">
+                    <section class="pc-card">
+                        <div class="pc-inside">
+                            <div class="pc-shine"></div>
+                            <div class="pc-glare"></div>
+                            <div class="pc-content pc-avatar-content">
+                                <img class="avatar" src="https://scontent.ffez2-2.fna.fbcdn.net/v/t1.15752-9/614106418_817006084704214_891771928166680096_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=MVIAg1gmURsQ7kNvwGfXuqJ&_nc_oc=AdnGXVKuMaHKh05zpjVG9guCmJbm6X_iZicuu-R2akiUWFUS0lG-ndH7U-OjKOp690E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.ffez2-2.fna&oh=03_Q7cD4QHnlfxl1tl4hl1FQEXbT_oCb63Y7KM8CR15OjYRxrfnKw&oe=6993AA30" alt="Your avatar" loading="lazy">
+                                <div class="pc-user-info">
+                                    <div class="pc-user-details">
+                                        <div class="pc-mini-avatar">
+                                            <img src="https://scontent.ffez2-2.fna.fbcdn.net/v/t1.15752-9/614106418_817006084704214_891771928166680096_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=MVIAg1gmURsQ7kNvwGfXuqJ&_nc_oc=AdnGXVKuMaHKh05zpjVG9guCmJbm6X_iZicuu-R2akiUWFUS0lG-ndH7U-OjKOp690E&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.ffez2-2.fna&oh=03_Q7cD4QHnlfxl1tl4hl1FQEXbT_oCb63Y7KM8CR15OjYRxrfnKw&oe=6993AA30" alt="Mini avatar">
+                                        </div>
+                                        <div class="pc-user-text">
+                                            <div class="pc-handle">@hamdaoui01</div>
+                                            <div class="pc-status">Available for work</div>
+                                        </div>
+                                    </div>
+                                    <button class="pc-contact-btn" onclick="scrollToContact()">Contact</button>
+                                </div>
+                            </div>
+                            <div class="pc-content">
+                                <div class="pc-details">
+                                    <h3>A. Hamdaoui</h3>
+                                    <p>Software Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="hero-text">
+                <h1 class="glitch" data-text="CREATIVE DEVELOPER">CREATIVE DEVELOPER</h1>
+                <p class="tagline">Designing and building high-performance software</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Bento Grid Section -->
+    <section id="skills" class="skills-section bento-section">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="card-grid" id="bentoGrid">
+            <!-- Card 1 -->
+            <div class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container" data-card="0">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Frontend</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h2 class="magic-bento-card__title">React & Vue</h2>
+                    <p class="magic-bento-card__description">Building modern, responsive user interfaces with cutting-edge frameworks</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container" data-card="1">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Backend</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h2 class="magic-bento-card__title">Node.js & Python</h2>
+                    <p class="magic-bento-card__description">Scalable server-side applications and APIs</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container" data-card="2">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Design</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h2 class="magic-bento-card__title">UI/UX Design</h2>
+                    <p class="magic-bento-card__description">Creating beautiful, intuitive user experiences that users love</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container" data-card="3">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Database</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h2 class="magic-bento-card__title">MongoDB & SQL</h2>
+                    <p class="magic-bento-card__description">Efficient data management and optimization</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container" data-card="4">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">DevOps</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h2 class="magic-bento-card__title">Docker & CI/CD</h2>
+                    <p class="magic-bento-card__description">Automated deployment and infrastructure management</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="magic-bento-card magic-bento-card--text-autohide magic-bento-card--border-glow particle-container" data-card="5">
+                <div class="magic-bento-card__header">
+                    <div class="magic-bento-card__label">Animation</div>
+                </div>
+                <div class="magic-bento-card__content">
+                    <h2 class="magic-bento-card__title">GSAP & WebGL</h2>
+                    <p class="magic-bento-card__description">Stunning animations and interactive experiences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-project="0">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Full-stack application with real-time inventory</p>
+                    <div class="project-tags">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="1">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>AI Dashboard</h3>
+                    <p>Analytics platform with machine learning insights</p>
+                    <div class="project-tags">
+                        <span>Vue.js</span>
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-project="2">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Social Media App</h3>
+                    <p>Real-time messaging and content sharing platform</p>
+                    <div class="project-tags">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>WebRTC</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                </button>
+            </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Email</h3>
+                    <p>skinkarbo@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <h3>Location</h3>
+                    <p>Amsterdam, Netherlands</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
